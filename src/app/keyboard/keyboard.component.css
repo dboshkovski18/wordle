@@ -1,0 +1,57 @@
+button {
+    padding: 1.5rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+    box-shadow: 3px 2px #888888;
+}
+
+button:active {
+    padding: 1.3rem;
+    font-size: 14px;
+}
+
+button.selected {
+    background-color: darkgrey;
+    pointer-events: none;
+    box-shadow: 3px 2px #888888;
+
+}
+
+.match {
+    background-color: goldenrod;
+}
+
+.success {
+    background-color: greenyellow;
+}
+
+.lost {
+    background-color: red;
+    pointer-events: none;
+}
+
+.keyboard-container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.letter {
+    margin: 0.3rem;
+}
+
+@media(max-width: 800px) {
+    button {
+        padding: .7rem;
+    }
+
+    .keyboard-container {
+        width: 100%;
+    }
+}

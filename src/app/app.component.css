@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    color: #3f3f3f
+}
+
+.placeholder {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.hint {
+    font-size: 20px;
+    text-decoration: wavy;
+    text-align: center;
+    padding: 2rem;
+}
+
+.guessLetter {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #989898;
+    padding: 2.3rem;
+    margin: .5rem;
+}
+
+.match {
+    background-color: goldenrod;
+}
+
+
+.success {
+    background-color: greenyellow;
+}
+
+.lost {
+    background-color: red;
+}
+
+.counter {
+    justify-content: center;
+    background-color: aqua;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+@media(max-width: 800px) {
+    .placeholder {
+        width: 100%;
+    }
+}

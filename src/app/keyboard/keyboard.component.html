@@ -1,0 +1,13 @@
+<div class="keyboard-container">
+    <button *ngFor="let letter of alphabet" 
+    id="{{letter}}"
+    class = "letter"
+    (click)="addLetter(letter)"
+    [disabled]="gameOver">{{ letter | uppercase }}
+    </button>
+    <button 
+    class="letter"
+    (click)="removeLast()"
+    [disabled]="gameOver">Delete</button>
+    <button class="letter" (click) = "checkTheWord()" [disabled]="gameOver">Check</button>
+</div>

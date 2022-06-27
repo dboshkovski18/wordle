@@ -1,0 +1,20 @@
+
+<div class="title">
+<h1>Wordle</h1>
+    <span class="counter">Chances: {{ 3 - tries }}</span>
+</div>
+
+<div class="placeholder">
+   
+    <span id="{{i}}" *ngFor="let letter of guessWord;let i = index" class="guessLetter" >{{ letter | uppercase}}</span>
+</div>
+    
+<div class="hint">
+    <span>{{ randomWordDescription }}</span>    
+</div>
+
+<app-keyboard   [randomWord]="randomWord"
+                [gameOver] = "gameOver"
+                (newLetterEvent) = "addLetter($event)"
+                (deleteLetterEvent)="deleteLetter($event)"
+                (checkTheWordEvent) = "checkTheWord($event)"></app-keyboard>
